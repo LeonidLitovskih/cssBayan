@@ -9,6 +9,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     cursor: pointer;
     font-size: x-large;
+    color: blue;
 }
 
 .bayan-container h1 {
@@ -24,18 +25,19 @@
     border-top: 0.5vh solid rgb(97, 107, 103);   
 }
 
-.bayan-container:hover {
-    color: #c300ff;
-}
-
 .bayan-container input {
     display: none;
 }
 
 .bayan-inside {
-
     height: 0;
     overflow: hidden;
+}
+
+.bayan-inside p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
 }
 
 .bayan-container label:before {
@@ -43,41 +45,34 @@
     float: right;
 }
 
-
 .bayan-container input:checked + label:before {
     transition: transform .5s;
     transform: rotate(-90deg);
     color: black;
 }
 
-.bayan-container input:checked + label{
+.bayan-input:checked + label + .bayan-inside {
+    height: 20vw;
+}
+
+.bayan-input:checked + label{
     color: black;
 }
 
-.bayan-input:checked + label + .bayan-inside {
-    height: 40vw;
-    opacity: 1;
-
+.bayan-container:hover{
+    color: black;
 }
 
-@media (max-width: 321px) {
-    .bayan-container{
-     font-size: 3.5vw;
-     cursor: auto;    
-    }
+.bayan-inside .img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
-@media (max-width: 321px) {
-    .bayan-container{
-     font-size: 3.5vw;
-     cursor: auto;    
-    }
+.bayan-container .bayan-input:hover .bayan-inside{
+    height: 20vw;
 }
 
-@media (max-width: 321px) {
-    .bayan-container{
-     font-size: 3.5vw;
-     cursor: auto;    
-    }
+.bayan-container .bayan-input:hover label{
+    display: block;
 }
-

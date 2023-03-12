@@ -86,17 +86,23 @@ html {
     .bayan-container{
       font-size: 1rem;
     }
-    .bayan-inside {
-      width: 8rem;
-    }
+    .bayan-inside .img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 4rem;
+      }
   }
   
   @media (min-width: 330px) and (max-width: 825px) {
     .bayan-container{
         font-size: 1rem;
       }
-      .bayan-inside {
-        width: 8rem;
+      .bayan-inside .img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 11rem;
       }
   }
   
@@ -107,7 +113,7 @@ html {
       .bayan-inside .img{
         display: block;
         margin-left: auto;
-        margin-right: auto
+        margin-right: auto;
       }
   }
   

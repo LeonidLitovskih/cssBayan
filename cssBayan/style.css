@@ -78,13 +78,9 @@ html {
     height: 20vw;
 }
 
-.bayan-container .bayan-input:hover label{
-    display: block;
-}
-
 @media (max-width: 325px) {
     .bayan-container{
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
     .bayan-inside .img{
         display: block;
@@ -108,7 +104,7 @@ html {
   
   @media (min-width: 830px) and (max-width: 1925px) {
     .bayan-container{
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
       .bayan-inside .img{
         display: block;
@@ -117,5 +113,5 @@ html {
       }
   }
 
-  
+
   

@@ -1,5 +1,61 @@
-.bayan-conteiner{
-    margin: auto;
-    width: 70%;
-     
+.bayan-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: 40;
+    transform: translate(-50%, -50%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+
+}
+
+.bayan-container h1 {
+    color:black;
+}
+
+.bayan-container label {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+    font-size: larger;
+    
+}
+
+.bayan-container:hover {
+    color: #c300ff;
+}
+
+.bayan-container input {
+    display: none;
+}
+
+.bayan-inside {
+    display: none;
+}
+
+.bayan-inside:hover {
+    display: block;
+}
+
+.bayan-container label:before {
+    content: '\2190';
+    float: right;
+}
+.bayan-container input:checked + label:before {
+    transition: transform .5s;
+    transform: rotate(-90deg);
+}
+
+
+
+
+@media (max-width: 321px) {
+    .bayan-container{
+     font-size: 4vw;
+     cursor: auto;    
+    }
+
+
 }

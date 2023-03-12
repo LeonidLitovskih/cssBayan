@@ -81,3 +81,31 @@ html {
 .bayan-container .bayan-input:hover label{
     display: block;
 }
+
+@media (max-width: 325px) {
+    .bayan-container{
+      font-size: 1rem;
+    }
+    .bayan-inside {
+      width: 8rem;
+    }
+  }
+  
+  @media (min-width: 330px) and (max-width: 825px) {
+    .bayan-container{
+        font-size: 4rem;
+      }
+      .bayan-inside {
+        width: 8rem;
+      }
+  }
+  
+  @media (min-width: 830px) and (max-width: 1925px) {
+    .bayan-container{
+        font-size: 12rem;
+      }
+      .bayan-inside {
+        width: 8rem;
+      }
+  }
+  

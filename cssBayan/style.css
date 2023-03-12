@@ -12,6 +12,11 @@
     color: blue;
 }
 
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
 .bayan-container h1 {
     color:black;
 }

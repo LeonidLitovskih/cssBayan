@@ -4,8 +4,7 @@
     flex-direction: column;
     top: 50%;
     left: 50%;
-    width: 25%;
-    height: 40;
+    width: 40%;
     transform: translate(-50%, -50%);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     cursor: pointer;
@@ -21,7 +20,8 @@
     width: 100%;
     box-sizing: border-box;
     font-size: larger;
-    cursor: pointer;   
+    cursor: pointer;
+    border-top: 0.5vh solid rgb(97, 107, 103);   
 }
 
 .bayan-container:hover {
@@ -33,7 +33,9 @@
 }
 
 .bayan-inside {
-    display: none;
+
+    height: 0;
+    overflow: hidden;
 }
 
 .bayan-container label:before {
@@ -41,19 +43,41 @@
     float: right;
 }
 
+
 .bayan-container input:checked + label:before {
     transition: transform .5s;
     transform: rotate(-90deg);
+    color: black;
 }
 
+.bayan-container input:checked + label{
+    color: black;
+}
 
-/*
+.bayan-input:checked + label + .bayan-inside {
+    height: 40vw;
+    opacity: 1;
+
+}
+
 @media (max-width: 321px) {
     .bayan-container{
      font-size: 3.5vw;
      cursor: auto;    
     }
-
-
 }
-*/
+
+@media (max-width: 321px) {
+    .bayan-container{
+     font-size: 3.5vw;
+     cursor: auto;    
+    }
+}
+
+@media (max-width: 321px) {
+    .bayan-container{
+     font-size: 3.5vw;
+     cursor: auto;    
+    }
+}
+

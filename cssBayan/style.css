@@ -35,6 +35,10 @@ html {
     overflow: hidden;
 }
 
+.bayan-input:checked + label + .bayan-inside .img{
+    transition: .5s;
+}
+
 .bayan-inside p{
     display: block;
     margin-left: auto;
@@ -54,6 +58,7 @@ html {
 
 
 .bayan-input:checked + label + .bayan-inside {
+    transition: .5s;
     height: 20vw;
 }
 
@@ -72,7 +77,8 @@ html {
     margin-right: auto
 }
 
-.bayan-container .bayan-input:hover .bayan-inside{
+.bayan-container .bayan-input:hover + .bayan-inside{
+    transition: .5s;
     height: 20vw;
 }
 

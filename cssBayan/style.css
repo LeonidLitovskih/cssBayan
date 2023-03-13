@@ -1,0 +1,124 @@
+.bayan-container {
+    width: 80%;
+    position: static;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    font-size: x-large;
+    color: blue;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
+.bayan-container h1 {
+    color:black;
+}
+
+.bayan-container label {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: larger;
+    cursor: pointer;
+    border-top: 0.5vh solid rgb(97, 107, 103);   
+}
+
+.bayan-container input {
+    display: none;
+}
+
+.bayan-inside {
+    cursor: pointer;
+    height: 0;
+    overflow: hidden;
+}
+
+.bayan-input:checked + label + .bayan-inside .img{
+    transition: .5s;
+}
+
+.bayan-inside p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+.bayan-container label:before {
+    content: '\2190';
+    float: right;
+}
+
+.bayan-container input:checked + label:before {
+    transition: transform .5s;
+    transform: rotate(-90deg);
+    color: black;
+}
+
+
+.bayan-input:checked + label + .bayan-inside {
+    transition: .5s;
+    height: 20vw;
+}
+
+.bayan-input:checked + label{
+    color: black;
+}
+
+.bayan-container:hover{
+    color: black;
+}
+
+.bayan-inside .img{
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.bayan-container .bayan-input:hover + .bayan-inside{
+    transition: .5s;
+    height: 20vw;
+}
+
+@media (max-width: 325px) {
+    .bayan-container{
+      font-size: 0.8rem;
+    }
+    .bayan-inside .img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 4rem;
+        cursor: auto;
+      }
+  }
+  
+  @media (min-width: 330px) and (max-width: 825px) {
+    .bayan-container{
+        font-size: 1rem;
+      }
+      .bayan-inside .img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 11rem;
+        cursor: auto;
+      }
+  }
+  
+  @media (min-width: 830px) and (max-width: 1925px) {
+    .bayan-container{
+        font-size: 1.2rem;
+      }
+      .bayan-inside .img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  }
+
+
+  

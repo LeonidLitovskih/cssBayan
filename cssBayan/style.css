@@ -74,7 +74,6 @@ html {
 
 @media (max-width: 325px) {
     .bayan-container{
-      cursor: auto;
       font-size: 0.8rem;
     }
     .bayan-inside .img{
@@ -88,7 +87,6 @@ html {
   
   @media (min-width: 330px) and (max-width: 825px) {
     .bayan-container{
-        cursor: auto;
         font-size: 1rem;
       }
       .bayan-inside .img{
@@ -102,7 +100,6 @@ html {
   
   @media (min-width: 830px) and (max-width: 1925px) {
     .bayan-container{
-        cursor: auto;
         font-size: 1.2rem;
       }
       .bayan-inside .img{

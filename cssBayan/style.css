@@ -35,6 +35,7 @@ html {
 }
 
 .bayan-inside {
+    cursor: pointer;
     height: 0;
     overflow: hidden;
 }
@@ -66,10 +67,10 @@ html {
 }
 
 .bayan-inside .img{
+    cursor: pointer;
     display: block;
     margin-left: auto;
     margin-right: auto
-    cursor: pointer;
 }
 
 .bayan-container .bayan-input:hover .bayan-inside{

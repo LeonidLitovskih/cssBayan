@@ -41,13 +41,17 @@ html {
     margin-right: auto 
 }
 
-/*
+.bayan-container label:before {
+    content: '\2190';
+    float: right;
+}
+
 .bayan-container input:checked + label {
     transition: transform .5s;
     transform: rotate(-90deg);
     color: black;
 }
-*/
+
 
 .bayan-input:checked + label + .bayan-inside {
     height: 20vw;

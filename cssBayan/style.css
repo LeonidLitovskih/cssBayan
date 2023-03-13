@@ -46,7 +46,7 @@ html {
     float: right;
 }
 
-.bayan-container input:checked + label {
+.bayan-container input:checked + label:before {
     transition: transform .5s;
     transform: rotate(-90deg);
     color: black;
